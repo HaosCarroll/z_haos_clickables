@@ -1,6 +1,5 @@
 # Clickable Haos
 
-Clickable Haos =?= CopyClickHaos =(?*.5)= click_copy_haos
 
 *After i broke my elbow, i needed some way to quicly do some things i was often doing.*
 
@@ -8,3 +7,9 @@ Clickable Haos =?= CopyClickHaos =(?*.5)= click_copy_haos
 * Initial [Clickables](http://koreahaos.github.io/haos_clickables/pgs/index.html
 * http://koreahaos.github.io/haos_clickables/pgs/index.html
 * 
+
+*thinking about what to call this ;
+
+* clickable_haos 
+* CopyClickHaos 
+* click_copy_haos
