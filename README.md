@@ -2,4 +2,4 @@
 
 Clickable Haos =?= CopyClickHaos =(?*.5)= click_copy_haos
 
-* Initial [Clickable](index.html) 
+* Initial [Clickables](/pgs/index.html) 
