@@ -1,6 +1,5 @@
 # Clickable Haos
 
-
 *After i broke my elbow, i needed some way to quicly do some things i was often doing.*
 
 * Initial [Clickables](/pgs/index.html)
