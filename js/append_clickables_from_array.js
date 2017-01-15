@@ -17,6 +17,9 @@ function create_clickable_element_for_url(script_num_in, label_for_clickable_url
     insert_string += '    <button id="script_preview_button_' + script_num_in + '"  onclick=" window.open(\'https://gist.github.com/' + url_for_clickable + '\',\'_blank\')">View Gist</button>';
     insert_string += '    <button data-copytarget="#clickable_command_' + script_num_in + '">copy</button>';
     insert_string += '  </div>';
+    //insert_string += '  <div id="clickable_command_script_preview_' + script_num_in + '">';
+    //insert_string += '      <script src="https://gist.github.com/' + url_for_clickable + '.js"></script>';
+    //insert_string += '  </div>';
 
     temp.innerHTML = insert_string;
     while (temp.firstChild) {
