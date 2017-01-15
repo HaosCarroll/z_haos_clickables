@@ -12,12 +12,13 @@ label {
   font-weight: bold;
   padding: 0.8em 0 0.2em 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-input, button {
+input,
+button {
   float: left;
   font-size: 1em;
   padding: 3px 6px;
@@ -27,7 +28,7 @@ input, button {
   box-shadow: none;
 }
 
-::-moz-focus-inner { 
+::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -41,7 +42,14 @@ input {
 
 button {
   position: relative;
-  background-color: #aaa;
+  background-color: #cccccc;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  position: relative;
+  background-color: #a0a0a0;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 }
@@ -64,19 +72,19 @@ button {
   opacity: 0;
   will-change: opacity, transform;
   -webkit-animation: showcopied 1.5s ease;
-          animation: showcopied 1.5s ease;
+  animation: showcopied 1.5s ease;
 }
 
 @-webkit-keyframes showcopied {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
   70% {
     opacity: 1;
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
@@ -87,16 +95,32 @@ button {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
   70% {
     opacity: 1;
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
   }
+}
+
+#heading_link:link,
+#heading_link:visited {
+  color: black;
+  padding: 10px;
+  width: 95%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #cccccc;
+}
+
+#heading_link:hover,
+#heading_link:active {
+  background-color: #a0a0a0;
 }
 
 
@@ -105,14 +129,18 @@ button {
  * Sauce : https://codepen.io/cbracco/pen/qzukg
  */
 
+
 /* Add this attribute to the element that needs a tooltip */
+
 [data_tooltip] {
   position: relative;
   z-index: 2;
   cursor: pointer;
 }
 
+
 /* Hide the tooltip content by default */
+
 [data_tooltip]:before,
 [data_tooltip]:after {
   visibility: hidden;
@@ -122,9 +150,11 @@ button {
   pointer-events: none;
 }
 
+
 /* Position tooltip above the element */
+
 [data_tooltip]:before {
-/*
+  /*
 
 */
   position: absolute;
@@ -146,12 +176,16 @@ button {
   line-height: 1.2;
 }
 
+
 /* Triangle hack to make tooltip look like a speech bubble */
+
 [data_tooltip]:after {
   position: absolute;
 }
 
+
 /* Show tooltip content on hover */
+
 [data_tooltip]:hover:before,
 [data_tooltip]:hover:after {
   visibility: visible;
